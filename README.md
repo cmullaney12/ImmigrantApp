@@ -8,14 +8,14 @@ The main page of our application shows the list of immigrant records.
 
 
 Prerequisites to run:
-* Install [pip](https://pip.pypa.io/en/stable/)
- * Note: pip is already installed if you're using Python 2 >=2.7.9 or Python 3 >=3.4
-* Install Django and PyMySQL using pip
- * _pip install Django_
- * _pip install PyMySQL_
- * We used Django version 1.10.3 and PyMySQL version 0.7.9
+* Install [Python 3.5.2](https://www.python.org/downloads/)
+* Double check that pip is installed by running `which pip`
+ * If the console prints somthing starting with `which: no pip in...`, then [install pip manually here](https://pip.pypa.io/en/stable/)
+* Once Pip is installed, navigate to the code directory and run `pip install -r requirements.txt` to install all dependencies for the project
+
+If there are any issues with the automatic dependency install, you can install Django 1.10 and PyMySQL 0.7.9 by running `pip install Django==1.10.3` and `pip install PyMySQl==0.7.9`
  
 To Run:
-* Navigate to your directory and run the command _manage.py runserver_
-* Find the IP address and port number for the server and type them into your internet browser
- * _http://IP Address:Port #/_
+* Navigate to the root directory and run the command `python manage.py runserver`
+* Find the port number for the development server in the console log and type them into your internet browser
+ * By default, it should be accessable at `http://localhost:3000/`
